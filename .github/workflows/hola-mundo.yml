@@ -2,7 +2,7 @@ name: Hola-Mundo
 
 on:
   push:
-    branches: [ "main", "release", "development" ]
+    branches: [ "main", "release", "develop" ]
  
 
 jobs:
