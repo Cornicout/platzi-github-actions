@@ -1,0 +1,21 @@
+name: Hola-Mundo
+
+on:
+  push:
+    branches: [ "main", "release", "development" ]
+ 
+
+jobs:
+  hola-mundo-py:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Configurar Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    
+    - name: Ejecutar script
+      run: python hola-mundo.py
